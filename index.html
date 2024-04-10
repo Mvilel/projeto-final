@@ -5,32 +5,68 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="investimento, renda fixa, renda variavel, FGC ">
   <meta name="description" content="O que é um investimento, quais os tipos de Renda Fixa e Renda Varável e como eles funcionam.">
+  <link rel="stylesheet" href="estilizando.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
   <title>Tipos de investimento</title>
 </head>
 <body>
   <header>
-    <div>
+    <div class="menu">
       <nav>
-        <a href="index.html"><h2>M<span>V</span></h2></a> <!--logo do Site-->
+        <!--logo do Site-->
+        <a class="menu-iten logo" href="index.html"><h2>M<span>V</span></h2></a> 
         <ul>
-          <li><a href="#o-que-e-um-investimento">Investimento</a></li>
-          <li><a href="#renda-fixa">Renda Fixa</a></li>
-          <li><a href="#renda-variável">Renda Variável</a></li>
-          <li>
-            <ul>  <!--menu responsivo-->
-              <li><a href="#página-inicial">Página Inicial</a></li>
-              <li><a href="Tipos-de-Renda-Fixa.html">Tipos de Renda Fixa</a></li>
-              <li><a href="Tipos-de-Renda-Variavel.html">Tipos de Renda Variável</a></li>
+          <li class="menu-iten"><a href="#o-que-e-um-investimento">Investimento</a></li>
+          <li class="menu-iten"><a href="#renda-fixa">Renda Fixa</a></li>
+          <li class="menu-iten"><a href="#renda-variável">Renda Variável</a></li>
+          <!--menu hamburger-->
+          <span class="material-symbols-outlined escondendo-submenu">menu</span>  
+          <li class="menu-iten">
+            <ul class="submenu">
+              <li class="submenu-iten"><a href="#página-inicial">Página Inicial</a></li>
+              <li class="submenu-iten"><a href="Tipos-de-Renda-Fixa.html">Tipos de Renda Fixa</a></li>
+              <li class="submenu-iten"><a href="Tipos-de-Renda-Variavel.html">Tipos de Renda Variável</a></li>
             </ul>
           </li>
         </ul>
       </nav>
     </div>
   </header>
-  <section>
-    <img src="Img-projeto-final.jpg" alt="Imagem ilustraativa de investimentos">
-    <img src="dados-de-graficos.jpg" alt="Imagem ilustraativa de investimentos em gráficos">
-    <img src="img-pf-invetimentos.jpg" alt="Imagem ilustraativa de investimentos conforme o passar do tempo">
+  <section class="sessão-imagens">
+    <div class="slides">
+      <!--radio-buttons-->
+      <input type="radio" name="radio-btns" id="rb1">
+      <input type="radio" name="radio-btns" id="rb2">
+      <input type="radio" name="radio-btns" id="rb3">
+      <!-- Fim-radio-buttons-->
+       
+      <!--Imagens-->
+      <div class="slides__img primeira">
+        <img src="Img-projeto-final.jpg" alt="Imagem ilustraativa de investimentos">
+      </div>
+      <div class="slides__img " >
+        <img src="dados-de-graficos.jpg" alt="Imagem ilustraativa de investimentos em gráficos">
+      </div>
+      <div class="slides__img">
+        <img src="img-pf-invetimentos.jpg" alt="Imagem ilustrativa de investimentos conforme o passar do tempo">
+      </div>
+    </div>
+      <!--Fim-Imagens-->
+
+      <!--"Bolinhas de navegação automaticas"-->
+    <div class="bdns">
+      <div class="auto-bdn1"></div>
+      <div class="auto-bdn2"></div>
+      <div class="auto-bdn3"></div>
+    </div>
+    <!-- Fim "Bolinhas de navegação automaticas"-->
+
+    <!--navegando manualmente usando as bolinhas-->
+    <div class="nav-manual">
+      <label for="rb1" class="manual-rb"></label>
+      <label for="rb2" class="manual-rb"></label>
+      <label for="rb3" class="manual-rb"></label>
+    </div>
   </section>
   <main>
     <section>
