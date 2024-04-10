@@ -39,17 +39,17 @@ a:active {
 
 .submenu{
   position: absolute;
-  display: none;
+  display: block;
   width: 100px;
 }
 
 .material-symbols-outlined {
-  margin-left: 200px;
+  margin-left:200px;
   cursor: pointer;
   color: #5790AB;
 }
 
-.escondendo-submenu:hover .submenu {
+.escondendo-submenu:hover .menu-iten {
   display: block;
 }
 
