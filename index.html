@@ -5,32 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="keywords" content="investimento, renda fixa, renda variavel, FGC ">
   <meta name="description" content="O que é um investimento, quais os tipos de Renda Fixa e Renda Varável e como eles funcionam.">
-  <link rel="stylesheet" href="estilizando.css">
+  <link rel="stylesheet" href="estilizando-index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+   <script src="https://kit.fontawesome.com/4822be00dc.js" crossorigin="anonymous"></script>
   <title>Tipos de investimento</title>
 </head>
 <body>
-  <header>
-    <div class="menu">  
-      <nav>
-        <!--logo do Site-->
-        <a class="menu-iten logo" href="index.html"><h2>M<span>V</span></h2></a> 
-        <ul>
-          <li class="menu-iten"><a href="#o-que-e-um-investimento">Investimento</a></li>
-          <li class="menu-iten"><a href="#renda-fixa">Renda Fixa</a></li>
-          <li class="menu-iten"><a href="#renda-variável">Renda Variável</a></li>
+  <header class="menu"> 
+    <!--logo do Site-->
+    <a class="menu-logo" href="index.html"><h2>MV</h2></a> 
+      <nav class="menu-nav">
+        <ul class="menu-nav-ul">
+          <li class="menu-iten escolhido"><a href="#o-que-e-um-investimento">Investimento</a></li>
+          <li class="menu-iten escolhido"><a href="#renda-fixa">Renda Fixa</a></li>
+          <li class="menu-iten escolhido"><a href="#renda-variável">Renda Variável</a></li>
           <!--menu hamburger-->
-          <span class="material-symbols-outlined escondendo-submenu">menu</span>  
-            <li class="menu-iten">
+          <li class="menu-iten escondendo-submenu material-symbols-outlined">menu 
             <ul class="submenu">
               <li class="submenu-iten"><a href="#página-inicial">Página Inicial</a></li>
-              <li class="submenu-iten"><a href="Tipos-de-Renda-Fixa.html">Tipos de Renda Fixa</a></li>
-              <li class="submenu-iten"><a href="Tipos-de-Renda-Variavel.html">Tipos de Renda Variável</a></li>
+              <li class="submenu-iten"><a href="tipos-de-renda-fixa.html">Tipos de Renda Fixa</a></li>
+              <li class="submenu-iten"><a href="tipos-de-renda-variavel.html">Tipos de Renda Variável</a></li>
             </ul>
           </li>
+          <!--Fim do menu hamburger-->
         </ul>
       </nav>
-    </div>
   </header>
   <section class="sessão-imagens">
     <div class="slides">
@@ -70,8 +69,8 @@
   </section>
   <main>
     <section>
-      <H1 id="o-que-e-um-investimento">O que é um investimento?</H1>
-        <p>Antes de começarmos a conceituar alguns tipos de aplicações, o que seria um investimento? Ele é um produto tem por objetivo render uma determinada quantia de capital aplicada, ou seja, utiliza-se dinheiro para ganhar mais dinheiro, a fim de tornar um ciclo virtuoso de lucros. Investimentos financeiros são divididos em categorias, entre elas as duas principais são Renda Fixa e Renda Variável .
+      <h1 id="o-que-e-um-investimento">O que é um investimento?</h1>
+        <p>Antes de começarmos a conceituar alguns tipos de aplicações, o que seria um investimento? Ele é um produto tem por objetivo render uma determinada quantia de capital aplicada, ou seja, utiliza-se dinheiro para ganhar mais dinheiro, a fim de tornar um ciclo virtuoso de lucros. Investimentos financeiros são divididos em categorias, entre elas as duas principais são Renda Fixa e Renda Variável.
         </p>
     </section>
     <section>
@@ -95,12 +94,11 @@
     </p>
   </aside>
   <footer>
-    <div> 
-      <div>
-        <a href="index.html"><h2>M<span>V</span></h2></a> <!--logo do Site-->
+      <div class="iten-footer div-logo">
+        <a class="logo" href="index.html"><h2>MV</h2></a> <!--logo do Site-->
       </div>
       <div>
-        <em>Links de acesso rápido</em>
+        <em class="iten-footer">Links de acesso rápido</em>
           <nav>
             <ul>
               <li><a href="index.html">Página Inicial</a></li>
@@ -109,16 +107,27 @@
               <li><a href="#renda-variável">Renda Variável</a></li>
             </ul>
           </nav>
-      </div>
+      </div> 
       <div>
-        <em>Redes sociais</em>
+        <em class="iten-footer redes-sociais">Redes sociais</em>  
           <ul>
-            <li><a href="https://github.com/Mvilel" target="_blank">Github</a></li>
-            <li><a href="https://www.instagram.com/m_atheusvilela/" target="_blank">Instagram</a></li>
-            <li><a href="https://www.linkedin.com/in/matheus-vilela-b19701300/" target="_blank">linkedin</a></li>
+            <li>
+              <a href="https://github.com/Mvilel" target="_blank">
+                <i class="fa-brands fa-github fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/m_atheusvilela/" target="_blank">
+                <i class="fa-brands fa-instagram fa-2xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/matheus-vilela-b19701300/" target="_blank">
+                <i class="fa-brands fa-linkedin fa-2xl"></i>
+              </a>
+            </li>
           </ul>
       </div>
-    </div>
   </footer>
 </body>
 </html>
