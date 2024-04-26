@@ -10,6 +10,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -33,9 +34,9 @@ a:active {
 header{
   display: flex;
   align-items: center;
+  flex-direction: row;
   justify-content: space-between;
-  padding: 0 16px;
-  position:sticky; /*mudar posteriormente*/
+  padding: 0 16px ;
   z-index: 1;
   font-size: 300;
   align-items: baseline;
@@ -96,9 +97,19 @@ header{
   height: 54px;
 }
 
+.menu-logo:hover {
+  transform: scale(0.9);
+  animation-duration: 2s; 
+  transition: 2s;
+}
+
+nav ul{
+  display: flex;
+  gap: 100px;
+}
+
 .menu-nav-ul{
   display: flex;
-  gap: 200px;
 }
 
 .menu-iten{
@@ -108,7 +119,8 @@ header{
 .submenu{
   position: absolute;
   display: none;
-  width: 400px;
+  right: 0;
+  width: 200px;
   height: 80px;
   background-color: #808080;
   font-family: system-ui;
@@ -218,13 +230,6 @@ header{
   animation-iteration-count: infinite;
 }
 
-@keyframes rodando-imagens {
-  0%{transform: translatex(0px,)};
-  30%{transform: translatex(-800px)};
-  60%{transform: translatex(-1600px)};
-  100%{transform: translatex(1600px)}; 
-}
-
 /*Fim das imagens*/
 
 /*main*/
@@ -314,8 +319,8 @@ footer {
 .redes-sociais ul{
   display: flex;
   flex-direction: column;
-  align-content: start;
-  align-items: start;
+  align-content: center;
+  align-items: center;
   row-gap: 20px;
 }
 

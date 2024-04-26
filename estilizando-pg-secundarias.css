@@ -9,6 +9,7 @@ body {
 
 ul {
   list-style: none;
+  padding: 0;
 }
 
 a {
@@ -89,6 +90,12 @@ header{
 
 .menu-logo img{
   height: 54px;
+}
+
+.menu-logo:hover {
+  transform: scale(0.9);
+  animation-duration: 2s; 
+  transition: 2s;
 }
 
 .menu-nav-ul{
@@ -191,14 +198,13 @@ footer {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  row-gap: 10px;
 }
 
 .redes-sociais ul{
   display: flex;
   flex-direction: column;
-  align-content: start;
-  align-items: start;
+  align-content: center;
+  align-items: center;
   row-gap: 20px;
 }
 
