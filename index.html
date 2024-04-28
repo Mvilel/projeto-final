@@ -15,13 +15,13 @@
 </head>
 <body>
   <header class="menu">
-    <a class="menu-logo menu-iten " href="index.html"><img src="logotipo.JPG" alt="logotipo do Site"></a>
       <nav class="menu-nav" id="nav-lisa" class="menu-nav px-3 mb-3"> 
-        <ul class="menu-nav-ul nav-pills">
-          <li class="menu-iten escolhido"><a href="#o-que-e-um-investimento">Investimento</a></li>
-          <li class="menu-iten escolhido"><a href="#renda-fixa">Renda Fixa</a></li>
-          <li class="menu-iten escolhido"><a href="#renda-variável">Renda Variável</a></li>
-          <li class="menu-iten escondendo-submenu material-symbols-outlined">menu 
+        <ul class="menu-nav-ul nav-pills nav-fill">
+          <li class="nav-item"><a class="nav-link menu-logo menu-iten " href="index.html"><img src="logotipo.JPG" alt="logotipo do Site"></a></li>
+          <li class="nav-item escolhido"><a href="#o-que-e-um-investimento">Investimento</a></li>
+          <li class="nav-item escolhido"><a href="#renda-fixa">Renda Fixa</a></li>
+          <li class="nav-item escolhido"><a href="#renda-variável">Renda Variável</a></li>
+          <li class="nav-item escondendo-submenu material-symbols-outlined">menu 
             <ul class="submenu">
               <li class="submenu-iten"><a href="#página-inicial">Página Inicial</a></li>
               <li class="submenu-iten"><a href="tipos-de-renda-fixa.html">Tipos de Renda Fixa</a></li>
@@ -31,33 +31,21 @@
         </ul>
       </nav>
   </header>
-  <section class="sessão-imagens">
-    <div class="slides">
-      <input type="radio" name="radio-btns" id="rb1">
-      <input type="radio" name="radio-btns" id="rb2">
-      <input type="radio" name="radio-btns" id="rb3">
-      
-      <div class="slides__img primeira">
-        <img src="Img-projeto-final.jpg" alt="Imagem ilustraativa de investimentos">
+  <section class="container sessão-imagens">
+    <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+      <div id="carousel-de-imagens" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Img-projeto-final.jpg" class="d-block w-100" alt="imagem ilustrativa de dinheiro crescendo ao longo do tempo">
+          </div>
+          <div class="carousel-item">
+            <img src="dados-de-graficos.jpg" class="d-block w-100" alt="imagem de um gráfico de investimentos">
+          </div>
+          <div class="carousel-item">
+            <img src="img-pf-invetimentos.jpg" class="d-block w-100" alt="imagem de evolução do dinheiro investido">
+          </div>
+        </div>
       </div>
-      <div class="slides__img " >
-        <img src="dados-de-graficos.jpg" alt="Imagem ilustraativa de investimentos em gráficos">
-      </div>
-      <div class="slides__img">
-        <img src="img-pf-invetimentos.jpg" alt="Imagem ilustrativa de investimentos conforme o passar do tempo">
-      </div>
-    </div>
-      <!--"Bolinhas de navegação automaticas"-->
-    <div class="bdns">
-      <div class="auto-bdn1"></div>
-      <div class="auto-bdn2"></div>
-      <div class="auto-bdn3"></div>
-    </div>
-    <!--navegando manualmente usando as bolinhas-->
-    <div class="nav-manual">
-      <label for="rb1" class="manual-rb"></label>
-      <label for="rb2" class="manual-rb"></label>
-      <label for="rb3" class="manual-rb"></label>
     </div>
   </section>
   <main>
