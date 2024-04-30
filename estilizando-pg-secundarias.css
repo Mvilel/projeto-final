@@ -31,11 +31,7 @@ a:active {
 /*estilizando o cabeçalho*/
 
 header{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   padding: 0 16px;
-  position:sticky; /*mudar posteriormente*/
   z-index: 1;
   font-size: 300;
   align-items: baseline;
@@ -100,18 +96,14 @@ header{
 
 .menu-nav-ul{
   display: flex;
-  gap: 200px;
-}
-
-.menu-iten{
-  display: flex;
 }
 
 .submenu{
   position: absolute;
   display: none;
-  width: 400px;
-  height: 80px;
+  right: 0;
+  width: 210px;
+  height: 150px;
   background-color: #808080;
   font-family: system-ui;
 }
@@ -167,6 +159,20 @@ footer {
   ;
 }
 
+@media only screen and (max-width: 480px){
+  footer{
+    grid-template-columns: 170px;
+    grid-template-rows: 3;
+    grid-template-areas: 
+    "logo"
+    "links-ar"
+    "redes-sociais"
+    ;
+    justify-content: center;
+    row-gap: 10px;
+  }
+}  
+
 .logo-footer{
   grid-area: logo;
   align-self: center;
@@ -183,14 +189,14 @@ footer {
   grid-area: links-ar;
   align-self: center;
   justify-self: center;
-  font-family: system-ui
+  font-family: system-ui;
 }
 
 .redes-sociais{
   grid-area: redes-sociais;
   justify-self: center;
   align-self: center;
-  font-family: system-ui
+  font-family: system-ui;
 }
 
 .links-ar ul {
