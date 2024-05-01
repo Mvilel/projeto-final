@@ -31,10 +31,11 @@ a:active {
 
 /*estilizando o cabeçalho*/
 
-header{
+header {
+  right: 0;
+  left: 0;
+  z-index: 1;
   padding: 0 16px;
-  font-size: 200;
-  align-items: baseline;
 }
 
 /*estilizando intens menu*/
@@ -99,8 +100,43 @@ header{
 }
 
 .menu-nav-ul{
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(5,160px);
+  grid-template-rows:50px ;
+  grid-template-areas: 
+  "logo inv rf rv menuzin";
+  justify-content: space-around;
+  justify-items: center;
+} 
+
+.menu-logo  {
+  grid-area: logo;
 }
+
+.menu-item-1{
+  grid-area: inv;
+}
+
+.menu-item-2{
+  grid-area: rf;
+}
+
+.menu-item-3{
+  grid-area: rv;
+}
+
+.menu-item-4{
+  grid-area: menuzin;
+}
+ @media only screen and (max-width:809px) {
+  .menu-nav-ul{
+    grid-template-columns: repeat(4, 160px);
+    grid-template-rows: repeat(2, 50px);
+    grid-template-areas: 
+    ". logo logo ."
+    "inv rf rv menuzin";
+  }
+ }
 
 .submenu{
   position: absolute;
