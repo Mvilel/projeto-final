@@ -32,12 +32,41 @@ a:active {
 /*estilizando o cabeçalho*/
 
 header {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  justify-content: space-evenly;
+  align-content: space-evenly;
+  align-items: baseline;
+  grid-template-areas:
+  "grid-logo  menu-nav"
+  ;
   right: 0;
   left: 0;
   z-index: 1;
   padding: 0 16px;
+  font-family: system-ui;
 }
 
+@media only screen and (max-width: 480px){
+  header {
+    grid-template-columns: 1fr;
+    grid-template-rows: 2;
+    grid-template-areas: 
+    "grid-logo"
+    "menu-nav"
+    ;
+    justify-content: center;
+    row-gap: 5px;
+    }
+
+  .grid-logo{
+    justify-self: center;
+  }
+
+  .menu-nav-ul{
+    font-size:xx-small;
+  }
+  }
 /*estilizando intens menu*/
 
 .escolhido{
@@ -100,43 +129,9 @@ header {
 }
 
 .menu-nav-ul{
-  display: grid;
-  grid-template-columns: repeat(5,160px);
-  grid-template-rows:50px ;
-  grid-template-areas: 
-  "logo inv rf rv menuzin";
-  justify-content: space-around;
-  justify-items: center;
-} 
-
-.menu-logo  {
-  grid-area: logo;
+ display: flex;
+ justify-content: space-around;
 }
-
-.menu-item-1{
-  grid-area: inv;
-}
-
-.menu-item-2{
-  grid-area: rf;
-}
-
-.menu-item-3{
-  grid-area: rv;
-}
-
-.menu-item-4{
-  grid-area: menuzin;
-}
- @media only screen and (max-width:809px) {
-  .menu-nav-ul{
-    grid-template-columns: repeat(4, 160px);
-    grid-template-rows: repeat(2, 50px);
-    grid-template-areas: 
-    ". logo logo ."
-    "inv rf rv menuzin";
-  }
- }
 
 .submenu{
   position: absolute;
