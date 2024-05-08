@@ -7,8 +7,8 @@
   <meta name="description" content="O que é um investimento, quais os tipos de Renda Fixa e Renda Varável e como eles funcionam.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="estilizando-index.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <link rel="stylesheet" href="index.css">
   <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
   <script src="https://kit.fontawesome.com/4822be00dc.js" crossorigin="anonymous"></script>
   <title>Tipos de investimentos</title>
@@ -20,18 +20,25 @@
     </div>
     <nav class="menu-nav" id="nav-lisa" class="menu-nav px-3 mb-3"> 
       <ul class="menu-nav-ul nav-pills">
-        <li class="menu-iten-1 escolhido col-xxsm-2"><a href="#o-que-e-um-investimento">Investimento</a></li>
-        <li class="menu-iten-2 escolhido col-xxsm-2"><a href="#renda-fixa">Renda Fixa</a></li>
-        <li class="menu-iten-3 escolhido col-xxsm-2"><a href="#renda-variável">Renda Variável</a></li>
-        <li class="menu-iten-4 escondendo-submenu material-symbols-outlined">menu 
-          <ul class="submenu">
-            <li class="submenu-iten"><a href="#página-inicial">Página Inicial</a></li>
-            <li class="submenu-iten"><a href="tipos-de-renda-fixa.html">Tipos de Renda Fixa</a></li>
-            <li class="submenu-iten"><a href="tipos-de-renda-variavel.html">Tipos de Renda Variável</a></li>
-          </ul>
-        </li>
-      </ul>
-    </nav>
+        <li class="menu-iten-1 animação "><a href="#página-inicial">Página Inicial</a></li>
+        <li class="menu-iten-2 animação "><a href="tipos-de-renda-fixa.html">Tipos de Renda Fixa</a></li>
+        <li class="menu-iten-3 animação "><a href="tipos-de-renda-variavel.html">Tipos de Renda Variável</a></li>
+        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="menu-iten-4 animação-submenu material-symbols-outlined">menu</i></button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+              <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Acesso Rápido</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body">
+                <ul class="submenu">
+                  <li class="submenu-iten"><a href="#o-que-e-um-investimento">Investimento</a></li>
+                  <li class="submenu-iten"><a href="#renda-fixa">Renda Fixa</a></li>
+                  <li class="submenu-iten"><a href="#renda-variável">Renda Variável</a></li>
+              </ul>
+              </div>
+            </div> 
+      </ul> 
+    </nav>  
   </header>
   <section class="container sessão-imagens">
     <div class="col-12 col-sm-12 col-md-12 col-lg-12">
@@ -69,7 +76,7 @@
   </main>
   <aside>
     <p>Quer saber mais sobre o FGC ? 
-      <a class="mudar-o-fundo" href="https://borainvestir.b3.com.br/tipos-de-investimentos/renda-variavel/existe-garantia-para-quem-investe-em-renda-variavel/"
+      <a class="link-anmd" href="https://borainvestir.b3.com.br/tipos-de-investimentos/renda-variavel/existe-garantia-para-quem-investe-em-renda-variavel/"
           target="_blank">
         Clique aqui
       </a>
@@ -84,10 +91,10 @@
         <em>Links de acesso rápido</em>
           <nav>
             <ul>
-              <li><a class="mudar-o-fundo" href="index.html">Página Inicial</a></li>
-              <li><a class="mudar-o-fundo" href="#o-que-e-um-investimento">Investimento</a></li>
-              <li><a class="mudar-o-fundo" href="#renda-fixa">Renda Fixa</a></li>
-              <li><a class="mudar-o-fundo" href="#renda-variável">Renda Variável</a></li>
+              <li><a class="link-anmd" href="index.html">Página Inicial</a></li>
+              <li><a class="link-anmd" href="#o-que-e-um-investimento">Investimento</a></li>
+              <li><a class="link-anmd" href="#renda-fixa">Renda Fixa</a></li>
+              <li><a class="link-anmd" href="#renda-variável">Renda Variável</a></li>
             </ul>
           </nav>
       </div> 
@@ -95,17 +102,17 @@
         <em>Redes sociais</em>  
           <ul>
             <li>
-              <a class="personalizando-icone-github" href="https://github.com/Mvilel" target="_blank">
+              <a class="icone-github" href="https://github.com/Mvilel" target="_blank">
                 <i class="fa-brands fa-github fa-2xl"></i>
               </a>
             </li>
             <li>
-              <a class="personalizando-icone-instagram" href="https://www.instagram.com/m_atheusvilela/" target="_blank">
+              <a class="icone-instagram" href="https://www.instagram.com/m_atheusvilela/" target="_blank">
                 <i class="fa-brands fa-instagram fa-2xl"></i>
               </a>
             </li>
             <li>
-              <a class="personalizando-icone-linkedin" href="https://www.linkedin.com/in/matheus-vilela-b19701300/" target="_blank">
+              <a class="icone-linkedin" href="https://www.linkedin.com/in/matheus-vilela-b19701300/" target="_blank">
                 <i class="fa-brands fa-linkedin fa-2xl"></i>
               </a>
             </li>

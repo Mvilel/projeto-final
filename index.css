@@ -23,7 +23,7 @@ a:active {
   cursor: progress;
 }
 
-.mudar-o-fundo:hover {
+.link-anmd:hover {
   color:#808080;
 }
 
@@ -64,20 +64,10 @@ header {
     justify-self: center;
   }
 
-  header a {
-    font-size: min(12px)
-  }
-  
-}
-
-  @media only screen and (max-width: 660px){
-    header a{
-      font-size: min(17px)
-    }
   }
 /*estilizando intens menu*/
 
-.escolhido{
+.animação{
   font-size: 20px;
   background: transparent;
   border: none;
@@ -86,7 +76,7 @@ header {
   transition: 0.5s ease;
 }
 
-.escolhido::before {
+.animação::before {
   content: "";
   position: absolute;
   left: 0;
@@ -97,16 +87,16 @@ header {
   transition: 0.5 ease;
 }
 
-.escolhido:hover {
+.animação:hover {
   color: #808080;
   transition-delay: 0.5s;
 }
 
-.escolhido:hover::before {
+.animação:hover::before {
   width: 100%;
 }
 
-.escolhido::after {
+.animação::after {
   content: "";
   position: absolute;
   left: 0;
@@ -118,7 +108,7 @@ header {
   z-index: -1;
 }
 
-.escolhido:hover::after {
+.animação:hover::after {
   height: 100%;
   transition-delay: 0.4s;
   color: #808080;
@@ -141,15 +131,9 @@ a img:hover {
  justify-content: space-around;
 }
 
-.submenu{
-  position: absolute;
-  display: none;
-  right: 0;
-  width: 250px;
-  height: 80px;
+ div #offcanvasRight{
   background-color: #808080;
   font-family: system-ui;
-  z-index: 1;
 }
 
 .material-symbols-outlined {
@@ -158,9 +142,6 @@ a img:hover {
   align-content: center;
 }
 
-.escondendo-submenu:hover .submenu{
-  display: block;
-}
 
 /* FIm estilizando o cabeçalho*/
 
@@ -173,13 +154,6 @@ section{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  animation: conteudo-peersonalizado 6s;
-}
-
- @keyframes conteudo-peersonalizado {
-  0%{transform: translatex(-50px)};
-  50%{transform: translatex(-25px)};
-  100%{transform: translatex(0px)};  
 }
 
 #o-que-e-um-investimento{
@@ -246,7 +220,7 @@ footer {
 
 .links-ar{
   grid-area: links-ar;
-  align-self: center;
+  align-self: flex-start;
   justify-self: center;
   font-family: system-ui;
 }
@@ -254,7 +228,7 @@ footer {
 .redes-sociais{
   grid-area: redes-sociais;
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
   font-family: system-ui;
 }
 
@@ -271,17 +245,17 @@ footer {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 18px;
 }
 
-.personalizando-icone-github:hover{
+.icone-github:hover{
   color: #342FD5; 
 }
 
-.personalizando-icone-instagram:hover{
+.icone-instagram:hover{
   color: #d62976
 }
 
-.personalizando-icone-linkedin:hover{
+.icone-linkedin:hover{
   color: #0072b1;
 }
