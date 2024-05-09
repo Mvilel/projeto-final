@@ -131,9 +131,18 @@ a img:hover {
  justify-content: space-around;
 }
 
- div #offcanvasRight{
+div .offcanvas-header{
+  background-color: #161616;
+  color: #ffffff;
+  font-family: system-ui;
+  font-size: 20px;
+} 
+
+ div .offcanvas-body{
   background-color: #808080;
   font-family: system-ui;
+  font-size: 20px;
+  padding: 0 16px;
 }
 
 .material-symbols-outlined {
@@ -141,7 +150,6 @@ a img:hover {
   color: #ffffff;
   align-content: center;
 }
-
 
 /* FIm estilizando o cabeçalho*/
 

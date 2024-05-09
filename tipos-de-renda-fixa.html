@@ -17,19 +17,25 @@
     <div class="grid-logo">
       <a class="menu-logo" href="index.html"><img src="logotipo.JPG" alt="logotipo do Site"></a>
     </div>
-    <nav class="menu-nav" id="nav-lisa" class="menu-nav px-3 mb-3">
+    <nav class="menu-nav px-3 mb-3" id="nav-lisa">
       <ul class="menu-nav-ul nav-pills">
         <li class="menu-iten-1 animação"><a href="index.html">Página Inicial</a></li>
         <li class="menu-iten-2 animação"><a href="tipos-de-renda-variavel.html">Tipos de Renda Variável</a></li>
-        <li class="menu-iten-3 animação-submenu material-symbols-outlined">menu
-          <ul class="submenu">
-            <li class="submenu-iten"><a href="#certificado-de-depósito-bancário">CDB</a></li>
-            <li class="submenu-iten"><a href="#lci-e-lca">LCI e LCA</a></li>
-            <li class="submenu-iten"><a href="#poupança">Poupança</a></li>
-            <li class="submenu-iten"><a href="#tesouro-direto">Tesouro Direto</a></li>
-            <li class="submenu-iten"><a href="#cri-e-cra">CRI e CRA</a></li>
-          </ul>
-        </li>
+        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="menu-iten-4 material-symbols-outlined">menu</i></button>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Acesso Rápido</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="submenu">
+              <li class="submenu-iten"><a href="#certificado-de-depósito-bancário">CDB</a></li>
+              <li class="submenu-iten"><a href="#lci-e-lca">LCI e LCA</a></li>
+              <li class="submenu-iten"><a href="#poupança">Poupança</a></li>
+              <li class="submenu-iten"><a href="#tesouro-direto">Tesouro Direto</a></li>
+              <li class="submenu-iten"><a href="#cri-e-cra">CRI e CRA</a></li>
+            </ul>
+          </div>
       </ul>
     </nav>
   </header>
