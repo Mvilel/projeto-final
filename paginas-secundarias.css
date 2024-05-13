@@ -33,35 +33,22 @@ a:active {
 header{
   display: grid;
   grid-template-columns: 100px 1fr;
-  justify-content: space-evenly;
-  align-content: space-evenly;
   align-items: baseline;
   grid-template-areas:
   "grid-logo  menu-nav"
   ;
-  right: 0;
-  left: 0;
-  z-index: 1;
   padding: 0 16px;
   font-family: system-ui;
 }
 
-@media only screen and (max-width: 480px){
-  header {
-    grid-template-columns: 1fr;
-    grid-template-rows: 2;
-    grid-template-areas: 
-    "grid-logo"
-    "menu-nav"
-    ;
-    justify-content: center;
-    row-gap: 5px;
-    }
+.menu-logo img{
+  height: 54px;
+}
 
-  .grid-logo{
-    justify-self: center;
-  }
-
+a img:hover {
+  transform: scale(0.9);
+  animation-duration: 2s; 
+  transition: 2s;
 }
 
 .animação{
@@ -111,43 +98,58 @@ header{
   color: #808080;
 }
 
-.menu-logo img{
-  height: 54px;
+.material-symbols-outlined {
+  cursor: pointer;
+  color: #ffffff;
+  align-content: center;
 }
 
-a img:hover {
-  transform: scale(0.9);
-  animation-duration: 2s; 
-  transition: 2s;
-}
-
-.menu-nav-ul{
-  display: flex;
-  justify-content: space-around;
-}
-
-div .offcanvas-header {
+ul .submenu-dropdown{
+  display: none;
+  right: 10;
+  position: absolute;
+  z-index: 1;
   background-color: #161616;
   color: #ffffff;
   font-family: system-ui;
   font-size: 20px;
-} 
-
- div .offcanvas-body{
-  background-color: #808080;
-  font-family: system-ui;
-  font-size: 20px;
-  padding: 0 16px;
 }
 
-.material-symbols-outlined {
-  cursor: pointer;
-  color: #ffffff;
+ul li .submenu-iten:hover{
+  background-color: #808080;
+}
+
+ul li:hover ul.submenu-dropdown{
+  display: block;
+}
+
+div .offcanvas-body {
+  justify-content: center;
+}
+
+@media only screen and (max-width: 992px){
+  li .material-symbols-outlined{
+    display: none;
+  }
+
+  div .offcanvas-header {
+    background-color: #161616;
+    color: #ffffff;
+  }
+
+  div .offcanvas-body {
+    background-color: #808080;
+    color: #ffffff;
+  }
+
+  .navbar {
+    justify-content: end;
+  }
+
 }
 
 /* FIm estilizando o cabeçalho*/
 
-/*main*/
  main{
   display: flex;
   flex-direction: row;
@@ -165,10 +167,6 @@ strong{
 p::first-letter{
   margin-left: 15px
 }
-
-/*Fim de main*/
-
-/*Footer*/
 
 footer {
   display: grid;

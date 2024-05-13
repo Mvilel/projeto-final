@@ -13,30 +13,34 @@
   <title>Tipos de Renda Variável</title>
 </head>
 <body>
-  <header class="menu">
-    <div class="grid-logo">
-      <a class="menu-logo" href="index.html"><img src="logotipo.JPG" alt="logotipo do Site"></a>
-    </div>
-    <nav class="menu-nav" id="nav-lisa" class="menu-nav px-3 mb-3">
-      <ul class="menu-nav-ul nav-pills">
-        <li class="menu-iten-1 animação"><a href="index.html">Página Inicial</a></li>
-        <li class="menu-iten-2 animação"><a href="tipos-de-renda-fixa.html">Tipos de Renda Fixa</a></li>
-        <button class="btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"><i class="menu-iten-4 material-symbols-outlined">menu</i></button>
-        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Acesso Rápido</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
-          <div class="offcanvas-body">
-          <ul class="submenu">
-            <li class="submenu-iten"><a href="#ações">Ações</a></li>
-            <li class="submenu-iten"><a href="#fundo-de-investimentos-imobiliarios">FIL</a></li>
-            <li class="submenu-iten"><a href="#cambio">Câmbio</a></li>
-            <li class="submenu-iten"><a href="#criptomoedas">Criptomoedas</a></li>
-            <li class="submenu-iten"><a href="#brds">BRDs</a></li>
+  <header class="menu container-fluid">
+    <div class="grid-logo"><a class="menu-logo" href="index.html"><img src="logotipo.JPG" alt="logotipo do Site"></a></div>
+    <nav class="navbar navbar-expand-lg menu-nav" id="nav-lisa">
+      <button class="navbar-toggler shadow-none bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon "></span>
+      </button>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Páginas</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="nav-pills navbar-nav gap-lg-5">
+            <li class="menu-iten animação"><a href="index.html">Página Inicial</a></li>
+            <li class="menu-iten animação"><a href="tipos-de-renda-fixa.html">Tipos de Renda Fixa</a></li>
+            <li class="menu-iten animação"><a href="tipos-de-renda-variavel.html">Tipos de Renda Variável</a></li>
+            <li><i class="menu-iten material-symbols-outlined">menu</i>
+              <ul class="submenu-dropdown">
+                <li class="submenu-iten"><a href="#ações">Ações</a></li>
+                <li class="submenu-iten"><a href="#fundo-de-investimentos-imobiliarios">FIL</a></li>
+                <li class="submenu-iten"><a href="#cambio">Câmbio</a></li>
+                <li class="submenu-iten"><a href="#criptomoedas">Criptomoedas</a></li>
+                <li class="submenu-iten"><a href="#brds">BRDs</a></li>
+              </ul>
+            </li>
           </ul>
         </div>
-      </ul> 
+      </div>
     </nav>
   </header>
   <main>

@@ -42,6 +42,16 @@ header {
   font-family: system-ui;
 }
 
+.menu-logo img{
+  height: 54px;
+}
+
+a img:hover {
+  transform: scale(0.9);
+  animation-duration: 2s; 
+  transition: 2s;
+}
+
 .animação{
   font-size: 20px;
   background: transparent;
@@ -89,14 +99,10 @@ header {
   color: #808080;
 }
 
-.menu-logo img{
-  height: 54px;
-}
-
-a img:hover {
-  transform: scale(0.9);
-  animation-duration: 2s; 
-  transition: 2s;
+.material-symbols-outlined {
+  cursor: pointer;
+  color: #ffffff;
+  align-content: center;
 }
 
 ul .submenu-dropdown{
@@ -116,16 +122,6 @@ ul li .submenu-iten:hover{
 
 ul li:hover ul.submenu-dropdown{
   display: block;
-}
-
-.material-symbols-outlined {
-  cursor: pointer;
-  color: #ffffff;
-  align-content: center;
-}
-
-.navbar-nav {
-  justify-content: space-around;
 }
 
 div .offcanvas-body {
@@ -159,7 +155,6 @@ section{
   justify-content: center;
 }
 
-/*main*/
  main{
   display: flex;
   flex-direction: row;
@@ -182,15 +177,11 @@ p::first-letter{
   margin-left: 15px
 }
 
-/*Fim de main*/
-
 aside{
   display: flex;
   justify-content: start;
   flex-wrap: wrap;
 }
-
-/*Footer*/
 
 footer {
   display: grid;
